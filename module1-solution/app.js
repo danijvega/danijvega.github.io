@@ -16,7 +16,7 @@ function LunchCheckController($scope) {
         var msg="Please enter data first";
         if (string){
             //var dishes = string.split(',').filter(element => element);
-            var dishes = string.split(/[ ,]+/);
+            var dishes = string.split(/[ ,]+/); //allow to split without whitespace and empties
             if (dishes.length<=3){
                 msg="Enjoy";
             }else{
